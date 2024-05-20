@@ -7,7 +7,6 @@ const Upload = ({ onDataUpload }) => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [errorMsg, setErrorMsg] = useState('');
   const [loading, setLoading] = useState(false);
-  const [data, setData] = useState([]);
   const fileInputRef = useRef(null);
 
   const handleFileChange = (e) => {
