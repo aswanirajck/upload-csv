@@ -40,7 +40,6 @@ const Upload = ({ onDataUpload }) => {
           ...row,
           'selected tags': [],
         }));
-        setData(enhancedOutput);
         onDataUpload(enhancedOutput);
         setErrorMsg('');
       }
@@ -49,7 +48,6 @@ const Upload = ({ onDataUpload }) => {
 
   const handleRemoveClick = () => {
     setSelectedFile(null);
-    setData([]);
     onDataUpload([]);
   };
 
